@@ -3,5 +3,17 @@
 }
 
 .project-items {
-  margin: 10px 0;
+  margin: 30px 0;
+}
+
+.project-item {
+  padding: 10px 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.project-links {
+  padding: 3px 0 6px;
 }
