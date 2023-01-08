@@ -13,16 +13,77 @@ document.addEventListener("DOMContentLoaded", () => {
   const projectItems = document.querySelector("div.project-items");
   projectsTitle.addEventListener("click", (e) => expandProjects(e));
   let expanded = false;
+
+  // Project items
+
+  const cssIfyName = (string) => {
+    let cssIfied = "";
+    const symbolFilter = /[^A-Za-z0-9]/;
+    for (let i = 0; i < string.length; i++) {
+      string[i].match(symbolFilter)
+        ? (cssIfied += string[i].toLowerCase())
+        : (cssIfied += "-");
+    }
+    return cssIfied;
+  };
+
+  const projects = {};
+  projects.popTracker = {
+    title: "Population Tracker",
+    gitHubUrl: "https://github.com/evanhundred/population-tracker",
+    liveUrl: "https://evanhundred.github.io/population-tracker/",
+    description:
+      "Population Tracker is a data visualization tool, which displays a colorful map of U.S. Census Data, by year, as broken down by state and territory."
+  };
+  projects.yup = {
+    title: "Yup",
+    gitHubUrl: "https://github.com/evanhundred/yup",
+    liveUrl: "https://yup-z7t1.onrender.com/",
+    description:
+      "Yup is a full stack Yelp clone, featuring User Auth and CRUD functionality."
+  };
+  projects.nyght = {
+    title: "NYGHT",
+    gitHubUrl: "https://github.com/cathanderson/nyght",
+    liveUrl: "https://nyght-40rn.onrender.com/",
+    description:
+      "NYGHT is an evening/date planning app, which presents users with an itinerary for the night based on neighborhood and preference. Logged in users can save, edit, and share itineraries with others via email."
+  };
+
+  const makeItems = () => {
+    const projectItem1 = document.createElement("div");
+    projectItem1.classList.add("project-item", "pop-tracker");
+    let projectTitle = "Population Tracker";
+    let h4 = document.createElement("h4");
+    h4.innerText = projectTitle;
+    projectItem1.appendChild(h4);
+
+    const container = document.createElement("div");
+    container.classList.add("project-items");
+
+    Object.keys(projects).forEach((project, idx) => {
+      const projectItem = document.createElement("div");
+      projectItem.classList.add(cssIfyName("project-item"));
+      projectItem.classList.add(cssIfyName(project.title));
+      const h4 = document.createElement("h4");
+      h4.innerText = project.title;
+      projectItem.appendChild(h4);
+
+      container.appendChild(projectItem);
+    });
+  };
+
+  // const projectItem1 = document.createElement("div");
+  // projectItem1.classList.add("project-item", "pop-tracker");
+  // let projectTitle = "Population Tracker";
+  // let h4 = document.createElement("h4");
+  // h4.innerText = projectTitle;
+  // projectItem1.appendChild(h4);
+
   const expandProjects = (e) => {
     e.preventDefault();
     if (!expanded) {
-      const projectItem1 = document.createElement("div");
-      projectItem1.classList.add("project-item", "pop-tracker");
-      let projectTitle = "Population Tracker";
-      let h4 = document.createElement("h4");
-      h4.innerText = projectTitle;
-      projectItem1.appendChild(h4);
-      projectItems.appendChild(projectItem1);
+      projectItems.appendChild(makeItems());
 
       expanded = true;
     } else {
