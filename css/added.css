@@ -16,4 +16,9 @@ a {
 
 .project-links {
   padding: 3px 0 6px;
+  display: flex;
+}
+
+.project-links p {
+  padding: 0 10px;
 }

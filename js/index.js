@@ -57,9 +57,37 @@ document.addEventListener("DOMContentLoaded", () => {
       const projectItem = document.createElement("div");
       projectItem.classList.add(cssIfyName("project-item"));
       projectItem.classList.add(cssIfyName(project.title));
+
       const h4 = document.createElement("h4");
       h4.innerText = project.title;
       projectItem.appendChild(h4);
+
+      const links = document.createElement("div");
+      links.classList.add("project-links");
+      projectItem.appendChild(links);
+
+      let a = document.createElement("a");
+      a.href = project.gitHubUrl;
+      a.target = "_blank";
+      a.rel = "noreferrer";
+      a.innerText = "GitHub";
+      links.appendChild(a);
+
+      let p = document.createElement("p");
+      p.innerText = "|";
+      links.appendChild(p);
+
+      a = document.createElement("a");
+      a.href = project.liveUrl;
+      a.target = "_blank";
+      a.rel = "noreferrer";
+      a.innerText = "Live";
+      links.appendChild(a);
+
+      const description = document.createElement("p");
+      description.innerText = project.description;
+      projectItem.appendChild(description);
+
       container.appendChild(projectItem);
     });
 
