@@ -22,3 +22,11 @@ a {
 .project-links p {
   padding: 0 10px;
 }
+
+div.container-card {
+  margin: 0px 0;
+}
+
+h2.projects-title {
+  cursor: pointer;
+}
