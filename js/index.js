@@ -12,14 +12,26 @@ document.addEventListener("DOMContentLoaded", () => {
   const projectsTitle = document.querySelector("h2.projects-title");
   const projectItems = document.querySelector("div.project-items");
   projectsTitle.addEventListener("click", (e) => expandProjects(e));
+  let expanded = false;
   const expandProjects = (e) => {
     e.preventDefault();
-    const projectItem1 = document.createElement("div");
-    projectItem1.classList.add("project-item", "pop-tracker");
-    let projectTitle = "Population Tracker";
-    let h4 = document.createElement("h4");
-    h4.innerText = projectTitle;
-    projectItem1.appendChild(h4);
-    projectItems.appendChild(projectItem1);
+    if (!expanded) {
+      const projectItem1 = document.createElement("div");
+      projectItem1.classList.add("project-item", "pop-tracker");
+      let projectTitle = "Population Tracker";
+      let h4 = document.createElement("h4");
+      h4.innerText = projectTitle;
+      projectItem1.appendChild(h4);
+      projectItems.appendChild(projectItem1);
+
+      expanded = true;
+    } else {
+      const projectItem1 = document.querySelector("div.project-item");
+      projectItems.removeChild(projectItem1);
+      expanded = false;
+    }
+
+    // reset event listener
+    // projectsTitle.removeEventListener;
   };
 });
