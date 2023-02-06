@@ -1,3 +1,5 @@
+import ProjectsCard from "./projectsCard";
+
 /*!
  * Start Bootstrap - The Big Picture v5.0.5 (https://startbootstrap.com/template/the-big-picture)
  * Copyright 2013-2022 Start Bootstrap
@@ -11,6 +13,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const projectItemsContainer = document.querySelector(
     "div.project-items-container"
   );
-  projectsTitle.addEventListener("click", (e) => expandProjects(e));
+  const projectsCard = new ProjectsCard(projectItemsContainer);
+  projectsTitle.addEventListener("click", (e) =>
+    projectsCard.expandProjects(e)
+  );
   let expanded = false;
 });

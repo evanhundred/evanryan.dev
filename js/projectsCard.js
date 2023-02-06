@@ -13,7 +13,7 @@ class ProjectsCard {
       yup: {
         title: "Yup",
         gitHubUrl: "https://github.com/evanhundred/yup",
-        liveUrl: "https://yup-z7t1.onrender.com/",
+        liveUrl: "https://yup.evanryan.dev",
         description:
           "Yup is a full stack Yelp clone, featuring User Auth and CRUD functionality."
       },
