@@ -10,12 +10,10 @@ import ProjectsCard from "./projectsCard";
 document.addEventListener("DOMContentLoaded", () => {
   const projectsContainer = document.querySelector("div.projects-container");
   const projectsTitle = document.querySelector("h2.projects-title");
-  const projectItemsContainer = document.querySelector(
-    "div.project-items-container"
-  );
-  const projectsCard = new ProjectsCard(projectItemsContainer);
+  const projectItemsList = document.querySelector("div.project-items-list");
+  const projectsCard = new ProjectsCard(projectItemsList);
+  let expanded = false;
   projectsTitle.addEventListener("click", (e) =>
     projectsCard.expandProjects(e)
   );
-  let expanded = false;
 });
