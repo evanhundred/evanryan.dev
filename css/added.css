@@ -17,3 +17,14 @@ a {
 .project-links {
   padding: 3px 0 6px;
 }
+
+div.social-links {
+  display: flex;
+  gap: 15px;
+  margin-top: 6px;
+}
+
+div.social-links img {
+  width: 25px;
+  margin-right: 3px;
+}
