@@ -30,3 +30,7 @@ div.container-card {
 h2.projects-title {
   cursor: pointer;
 }
+
+.social-links img {
+  width: 30px;
+}

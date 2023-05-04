@@ -1,6 +1,6 @@
 import _ from "lodash";
 
-import ProjectsCard from "./projectsCard";
+import ProjectsCard from "./scripts/projectsCard";
 
 /*!
  * Start Bootstrap - The Big Picture v5.0.5 (https://startbootstrap.com/template/the-big-picture)
