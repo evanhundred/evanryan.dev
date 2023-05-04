@@ -22,9 +22,10 @@
     "webpack-cli": "^5.0.1"
   },
   "dependencies": {
-    "lodash": "^4.17.21"
+    "lodash": "^4.17.21",
+    "mini-css-extract-plugin": "^2.7.5"
   },
-  "browserlist": [
+  "browserslist": [
     "defaults"
   ]
 }
