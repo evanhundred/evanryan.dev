@@ -1,3 +1,9 @@
+section#main-page-container {
+  & .projects-container {
+    margin-bottom: 50px;
+  }
+}
+
 .contact-items p {
   margin: 0;
 }
@@ -34,7 +40,7 @@ div.social-links img {
   padding: 0 10px;
 }
 
-div.container-card {
+.container-card {
   margin: 0px 0;
 }
 

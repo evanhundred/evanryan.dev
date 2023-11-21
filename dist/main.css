@@ -1,6 +1,12 @@
 /*!****************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/added.css ***!
   \****************************************************************************************************/
+section#main-page-container {
+  & .projects-container {
+    margin-bottom: 50px;
+  }
+}
+
 .contact-items p {
   margin: 0;
 }
@@ -37,7 +43,7 @@ div.social-links img {
   padding: 0 10px;
 }
 
-div.container-card {
+.container-card {
   margin: 0px 0;
 }
 
