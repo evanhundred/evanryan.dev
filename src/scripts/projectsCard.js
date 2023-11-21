@@ -1,7 +1,7 @@
 class ProjectsCard {
   constructor(containerDiv) {
     this.containerDiv = containerDiv;
-    console.log(containerDiv);
+    // console.log(containerDiv);
 
     this.projects = {
       populationTracker: {

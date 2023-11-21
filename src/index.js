@@ -14,10 +14,10 @@ document.addEventListener("DOMContentLoaded", () => {
   //   "div.projects-container"
   // );
   const projectsCard = new ProjectsCard(projectsContainer);
-  projectsTitle.addEventListener("click", (e) =>
-    projectsCard.expandProjects(e)
-  );
-  let expanded = false;
+  // projectsTitle.addEventListener("click", (e) =>
+  //   projectsCard.expandProjects(e)
+  // );
+  // let expanded = false;
 });
 
 // function component() {
