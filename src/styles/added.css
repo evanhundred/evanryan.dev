@@ -1,3 +1,9 @@
+section#main-page-container {
+  & .projects-container {
+    margin-bottom: 50px;
+  }
+}
+
 .contact-items p {
   margin: 0;
 }
@@ -14,10 +20,6 @@ a {
   text-decoration: none;
 }
 
-.project-links {
-  padding: 3px 0 6px;
-}
-
 div.social-links {
   display: flex;
   gap: 15px;
@@ -27,4 +29,21 @@ div.social-links {
 div.social-links img {
   width: 25px;
   margin-right: 3px;
+}
+
+.project-links {
+  padding: 3px 0 6px;
+  display: flex;
+}
+
+.project-links p {
+  padding: 0 10px;
+}
+
+.container-card {
+  margin: 0px 0;
+}
+
+h2.projects-title {
+  cursor: pointer;
 }

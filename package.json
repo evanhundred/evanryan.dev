@@ -1,0 +1,37 @@
+{
+  "name": "evanryan.dev",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch --mode=development",
+    "build": "webpack --mode=production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evanhundred/evanryan.dev.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/evanhundred/evanryan.dev/issues"
+  },
+  "homepage": "https://github.com/evanhundred/evanryan.dev#readme",
+  "devDependencies": {
+    "@babel/preset-env": "^7.21.5",
+    "webpack-cli": "^5.0.1"
+  },
+  "dependencies": {
+    "babel-loader": "^9.1.2",
+    "css-loader": "^6.7.3",
+    "lodash": "^4.17.21",
+    "mini-css-extract-plugin": "^2.7.5",
+    "sass": "^1.62.1",
+    "sass-loader": "^13.2.2"
+  },
+  "browserslist": [
+    "defaults"
+  ]
+}
