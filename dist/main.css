@@ -13,6 +13,7 @@ section#main-page-container {
 
 .about-container {
   #photo-container {
+    margin-top: 20px;
     img {
       border-radius: 5px;
       width: 400px;
@@ -20,7 +21,7 @@ section#main-page-container {
   }
 
   #resume-container {
-    margin: 10px 0 0;
+    margin: 20px 0 20px;
     h3 {
       color: #0d6efd;
       width: max-content;
