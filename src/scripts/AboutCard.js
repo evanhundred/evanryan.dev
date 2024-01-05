@@ -11,6 +11,7 @@ class AboutCard {
     photoImg.src = "./assets/face-lo-res.jpeg";
     // photoImg.class = "img-fluid";
     photoImg.classList.add("img-fluid");
+    photoImg.style.borderRadius = "5px";
     photoCard.appendChild(photoImg);
 
     const resume = document.createElement("div");
