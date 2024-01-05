@@ -8,6 +8,15 @@ section#main-page-container {
   margin: 0;
 }
 
+.about-container {
+  #photo-container {
+    img {
+      border-radius: 5px;
+      width: 400px;
+    }
+  }
+}
+
 .project-items {
   margin: 30px 0;
 }
@@ -47,3 +56,6 @@ div.social-links img {
 /* h2.projects-title {
   cursor: pointer;
 } */
+
+#contact {
+}
