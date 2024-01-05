@@ -9,6 +9,8 @@ class AboutCard {
     this.containerDiv.appendChild(photoCard);
     let photoImg = document.createElement("img");
     photoImg.src = "./assets/face-lo-res.jpeg";
+    // photoImg.class = "img-fluid";
+    photoImg.classList.add("img-fluid");
     photoCard.appendChild(photoImg);
 
     const resume = document.createElement("div");
