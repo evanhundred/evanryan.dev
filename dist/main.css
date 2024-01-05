@@ -23,7 +23,7 @@ section#main-page-container {
   #resume-container {
     margin: 20px 0 20px;
     h3 {
-      color: #0d6efd;
+      /* color: #0d6efd; */
       width: max-content;
       cursor: pointer;
     }
