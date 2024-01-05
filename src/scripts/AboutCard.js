@@ -24,6 +24,7 @@ class AboutCard {
 
     let h3 = document.createElement("h3");
     h3.innerText = "resume";
+    h3.style.color = "#0d6efd";
     h3.addEventListener("click", openResumeFile);
     resume.appendChild(h3);
 
