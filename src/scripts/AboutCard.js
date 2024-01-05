@@ -16,8 +16,13 @@ class AboutCard {
     resume.id = "resume-container";
     this.containerDiv.appendChild(resume);
 
+    const openResumeFile = () => {
+      window.open("/assets/evan-resume.pdf", "resumeTab");
+    };
+
     let h3 = document.createElement("h3");
     h3.innerText = "resume";
+    h3.addEventListener("click", openResumeFile);
     resume.appendChild(h3);
 
     const bio = document.createElement("bio");
