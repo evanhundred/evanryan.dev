@@ -12,12 +12,12 @@
     <title>evan ryan - developer</title>
     <link rel="icon" type="image/x-icon" href="assets/letter-e.png" />
     <link href="./dist/main.css" rel="stylesheet" />
-    <script src="./dist/main.js"></script>
+    <script src="./dist/main.js" defer></script>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-bottom">
       <div class="container px-4 px-lg-5">
-        <a class="navbar-brand" href="#!">evan</a>
+        <a class="navbar-brand" href="#main-page-container">evan</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -31,12 +31,18 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-            <!-- <li class="nav-item active">
-              <a class="nav-link" href="#!">Home</a>
+            <li class="nav-item active">
+              <a class="nav-link" href="#main-page-container">home</a>
             </li>
-            <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="#!">Services</a></li>
-            <li class="nav-item"><a class="nav-link" href="#!">Contact</a></li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about-container">about</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects-container">projects</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -52,11 +58,11 @@
               PostgreSQL
             </p>
           </div>
-          <div class="col-lg-6 container-card">
+          <div id="contact" class="col-lg-6 container-card">
             <h2 class="mt-5">contact</h2>
             <div class="contact-items">
-              <p>p 347-277-8115</p>
-              <p>e evan dot hundred at gmail dot com</p>
+              <p>p: 347-277-8115</p>
+              <p>e: evan at evanryan dot dev</p>
               <div class="social-links">
                 <div class="github">
                   <a
@@ -77,10 +83,16 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-6 about-container container-card">
+          <div
+            id="about-container"
+            class="col-lg-6 about-container container-card"
+          >
             <h2 class="mt-5">about</h2>
           </div>
-          <div class="col-lg-6 projects-container container-card">
+          <div
+            id="projects-container"
+            class="col-lg-6 projects-container container-card"
+          >
             <h2 class="mt-5 projects-title">projects</h2>
             <!-- <div class="project-items-list"></div> -->
           </div>

@@ -1,23 +1,18 @@
 import _ from "lodash";
-import ProjectsCard from "./scripts/projectsCard";
-
-/*!
- * Start Bootstrap - The Big Picture v5.0.5 (https://startbootstrap.com/template/the-big-picture)
- * Copyright 2013-2022 Start Bootstrap
- * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-the-big-picture/blob/master/LICENSE)
- */
+import ProjectsCard from "./scripts/ProjectsCard";
+import AboutCard from "./scripts/AboutCard";
 
 document.addEventListener("DOMContentLoaded", () => {
   const projectsContainer = document.querySelector("div.projects-container");
   const projectsTitle = document.querySelector("h2.projects-title");
-  // const projectItemsContainer = document.querySelector(
-  //   "div.projects-container"
-  // );
   const projectsCard = new ProjectsCard(projectsContainer);
   // projectsTitle.addEventListener("click", (e) =>
   //   projectsCard.expandProjects(e)
   // );
   // let expanded = false;
+
+  const aboutDiv = document.querySelector(".about-container");
+  const aboutCard = new AboutCard(aboutDiv);
 });
 
 // function component() {
@@ -31,13 +26,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // import ProjectsCard from "./projectsCard";
 
-// /*!
+// /* Template:
 //  * Start Bootstrap - The Big Picture v5.0.5 (https://startbootstrap.com/template/the-big-picture)
 //  * Copyright 2013-2022 Start Bootstrap
 //  * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-the-big-picture/blob/master/LICENSE)
 //  */
-// // This file is intentionally blank
-// // Use this file to add JavaScript to your project
+
 // document.addEventListener("DOMContentLoaded", () => {
 //   const projectsContainer = document.querySelector("div.projects-container");
 //   const projectsTitle = document.querySelector("h2.projects-title");
