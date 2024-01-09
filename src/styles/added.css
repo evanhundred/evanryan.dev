@@ -1,4 +1,7 @@
 section#main-page-container {
+  & #top-spacing-container {
+    margin-top: -1.5rem;
+  }
   & .projects-container {
     margin-bottom: 50px;
   }
