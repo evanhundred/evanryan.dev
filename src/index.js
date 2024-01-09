@@ -3,6 +3,8 @@ import ProjectsCard from "./scripts/ProjectsCard";
 import AboutCard from "./scripts/AboutCard";
 
 document.addEventListener("DOMContentLoaded", () => {
+    const topSpacingContainer = document.createElememt("div");
+    const mainContentContainer = document.get
   const projectsContainer = document.querySelector("div.projects-container");
   const projectsTitle = document.querySelector("h2.projects-title");
   const projectsCard = new ProjectsCard(projectsContainer);
