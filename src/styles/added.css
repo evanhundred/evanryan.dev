@@ -2,6 +2,9 @@ section#main-page-container {
   & #top-spacing-container {
     margin-top: -1.5rem;
   }
+  & h2.mt-5 {
+    font-weight: 500;
+    }
   & .projects-container {
     margin-bottom: 50px;
   }
