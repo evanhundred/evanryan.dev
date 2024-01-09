@@ -5,6 +5,9 @@ section#main-page-container {
   & h2.mt-5 {
     font-weight: 500;
     }
+  #contact {
+    margin-top: 1rem;
+  }
   & .projects-container {
     margin-bottom: 50px;
   }
