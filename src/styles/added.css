@@ -1,13 +1,15 @@
 section#main-page-container {
+  padding-bottom: 15px;
+
   & #top-spacing-container {
-    margin-top: -1.5rem;
+    margin-top: -0.5rem;
   }
   & h2.mt-5 {
     font-weight: 500;
-    }
-  #about-container {
-    margin-top: 1rem;
   }
+  /* #about-container {
+    margin-top: 1rem;
+  } */
   & .projects-container {
     margin-bottom: 50px;
   }
@@ -51,7 +53,7 @@ a {
 div.social-links {
   display: flex;
   gap: 15px;
-  margin-top: 6px;
+  margin: 6px 0 15px;
 }
 
 div.social-links img {
@@ -71,10 +73,3 @@ div.social-links img {
 .container-card {
   margin: 0px 0;
 }
-
-/* h2.projects-title {
-  cursor: pointer;
-} */
-
-/* #contact {
-} */
