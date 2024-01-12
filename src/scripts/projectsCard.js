@@ -9,7 +9,7 @@ class ProjectsCard {
         gitHubUrl: "https://github.com/evanhundred/population-tracker",
         liveUrl: "https://evanhundred.github.io/population-tracker/",
         description:
-          "Population Tracker is a data visualization tool, which displays a colorful map of U.S. Census Data, by year, as broken down by state and territory."
+          "Population Tracker is a data visualization tool, which fetches U.S. Census records to render a colorful map. Population is displayed by year, and broken down by state or territory."
       },
       yup: {
         title: "Yup",
