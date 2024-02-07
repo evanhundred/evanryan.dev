@@ -29,7 +29,7 @@ class AboutCard {
     h3.addEventListener("click", openResumeFile);
     resume.appendChild(h3);
 
-    const bio = document.createElement("bio");
+    const bio = document.createElement("div");
     bio.id = "bio-container";
     this.containerDiv.appendChild(bio);
 
@@ -37,10 +37,24 @@ class AboutCard {
     p.innerText =
       "Full Stack software engineer, open to employment and collaboration.";
     bio.appendChild(p);
+    let p2Container = document.createElement("div");
+    p2Container.id = "bio-p2-container";
+    bio.appendChild(p2Container);
     let p2 = document.createElement("p");
-    p2.innerText =
-      "Based in Brooklyn, NYC. Developer and musician. I specialize in React, Rails and PostgreSQL. Currently studying GraphQL and Prisma.";
-    bio.appendChild(p2);
+    p2.innerText = "Based in Brooklyn, NYC. Developer and ";
+    p2Container.appendChild(p2);
+    let a = document.createElement("a");
+    a.href = "https://www.youtube.com/@evanryanbass";
+    a.rel = "noopener noreferrer";
+    a.target = "_blank";
+    a.className = "musician-link";
+    let linkText = document.createTextNode("musician");
+    a.appendChild(linkText);
+    p2.appendChild(a);
+    let span = document.createElement("span");
+    span.innerText =
+      ". I specialize in React, Rails and PostgreSQL. Currently studying GraphQL and Prisma.";
+    p2.appendChild(span);
   }
 }
 
