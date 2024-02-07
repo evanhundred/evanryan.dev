@@ -1,7 +1,6 @@
 class ProjectsCard {
   constructor(containerDiv) {
     this.containerDiv = containerDiv;
-    // console.log(containerDiv);
 
     this.projects = {
       populationTracker: {
@@ -27,7 +26,6 @@ class ProjectsCard {
       }
     };
 
-    // const projectsUl = document.createElement("ul");
     const projectsContainer = this.makeItems();
     containerDiv.appendChild(projectsContainer);
   }

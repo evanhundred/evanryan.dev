@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const topSpacingInstance = new Spacer(topSpacingContainer);
 
   const projectsContainer = document.querySelector("div.projects-container");
-  const projectsTitle = document.querySelector("h2.projects-title");
+  // const projectsTitle = document.querySelector("h2.projects-title");
   const projectsCard = new ProjectsCard(projectsContainer);
   // projectsTitle.addEventListener("click", (e) =>
   //   projectsCard.expandProjects(e)
@@ -21,22 +21,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const aboutCard = new AboutCard(aboutDiv);
 });
 
-// function component() {
-//   const element = document.createElement("div");
-//   element.innerHTML = _.join(["Hello", "webpack"], " ");
-
-//   return element;
-// }
-
-// document.body.appendChild(component());
-
-// import ProjectsCard from "./projectsCard";
-
-// /* Template:
-//  * Start Bootstrap - The Big Picture v5.0.5 (https://startbootstrap.com/template/the-big-picture)
-//  * Copyright 2013-2022 Start Bootstrap
-//  * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-the-big-picture/blob/master/LICENSE)
-//  */
+// -----
+// next: create expandable projects cards
+// -----
 
 // document.addEventListener("DOMContentLoaded", () => {
 //   const projectsContainer = document.querySelector("div.projects-container");
@@ -48,3 +35,10 @@ document.addEventListener("DOMContentLoaded", () => {
 //     projectsCard.expandProjects(e)
 //   );
 // // });
+
+// ------------
+// /* Template:
+//  * Start Bootstrap - The Big Picture v5.0.5 (https://startbootstrap.com/template/the-big-picture)
+//  * Copyright 2013-2022 Start Bootstrap
+//  * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-the-big-picture/blob/master/LICENSE)
+//  */

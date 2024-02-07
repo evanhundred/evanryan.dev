@@ -10,9 +10,7 @@ section#main-page-container {
   & h2.mt-5 {
     font-weight: 500;
   }
-  /* #about-container {
-    margin-top: 1rem;
-  } */
+
   & .projects-container {
     margin-bottom: 50px;
   }
@@ -32,7 +30,6 @@ section#main-page-container {
   }
   #bio-container {
     & #bio-p2-container {
-      /* display: inline-block; */
       & p a {
         color: black;
         &:hover {
@@ -45,7 +42,6 @@ section#main-page-container {
   #resume-container {
     margin: 20px 0 20px;
     h3 {
-      /* color: #0d6efd; */
       width: max-content;
       cursor: pointer;
     }

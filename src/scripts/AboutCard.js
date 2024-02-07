@@ -1,5 +1,3 @@
-// import headshot from "./assets/face-lo-res.jpeg";
-
 class AboutCard {
   constructor(containerDiv) {
     this.containerDiv = containerDiv;
@@ -9,13 +7,11 @@ class AboutCard {
     this.containerDiv.appendChild(photoCard);
     let photoImg = document.createElement("img");
     photoImg.src = "./assets/face-lo-res.jpeg";
-    // photoImg.class = "img-fluid";
     photoImg.classList.add("img-fluid");
     photoImg.style.borderRadius = "5px";
     photoCard.appendChild(photoImg);
 
     const resume = document.createElement("div");
-    // resume.classList.add("resume-container");
     resume.id = "resume-container";
     this.containerDiv.appendChild(resume);
 
@@ -59,13 +55,3 @@ class AboutCard {
 }
 
 export default AboutCard;
-
-// const createSections = () => {
-//   const sections = [
-//     "resume",
-//     "bio"
-//   ]
-//   for (let i = 0; i <=sections.length; i++) {
-
-//   }
-// }
