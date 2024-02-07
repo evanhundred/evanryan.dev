@@ -39,7 +39,7 @@ class AboutCard {
     bio.appendChild(p);
     let p2 = document.createElement("p");
     p2.innerText =
-      "Based in Brooklyn, NYC. Developer and musician. I specialize in React, Rails and Express. Currently studying GraphQL and Prisma.";
+      "Based in Brooklyn, NYC. Developer and musician. I specialize in React, Rails and PostgreSQL. Currently studying GraphQL and Prisma.";
     bio.appendChild(p2);
   }
 }
