@@ -1,3 +1,6 @@
+/*!****************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/added.css ***!
+  \****************************************************************************************************/
 section#main-page-container {
   padding-bottom: 15px;
 
@@ -19,12 +22,23 @@ section#main-page-container {
   margin: 0;
 }
 
-.about-container {
+#about-container {
   #photo-container {
     margin-top: 20px;
     img {
       border-radius: 5px;
       width: 300px;
+    }
+  }
+  #bio-container {
+    & #bio-p2-container {
+      /* display: inline-block; */
+      & p a {
+        color: black;
+        &:hover {
+          color: rgb(41, 129, 107);
+        }
+      }
     }
   }
 
@@ -74,6 +88,9 @@ div.social-links img {
   margin: 0px 0;
 }
 
+/*!*****************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/styles.css ***!
+  \*****************************************************************************************************/
 @charset "UTF-8";
 /*!
 * Start Bootstrap - The Big Picture v5.0.5 (https://startbootstrap.com/template/the-big-picture)
@@ -11745,6 +11762,7 @@ body {
   background-size: cover;
 }
 
+/*!*************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/index.scss ***!
+  \*************************************************************************************************************************************/
 
-
-/*# sourceMappingURL=main.css.map*/
