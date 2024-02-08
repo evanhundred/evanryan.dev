@@ -4,6 +4,10 @@
 section#main-page-container {
   padding-bottom: 15px;
 
+  #content-container {
+    margin-bottom: 35px;
+  }
+
   & #top-spacing-container {
     margin-top: -0.5rem;
   }
@@ -39,7 +43,7 @@ section#main-page-container {
     }
   }
   #waka-chart {
-    margin: 20px 0 60px;
+    margin: 20px 0;
   }
 
   #resume-container {
