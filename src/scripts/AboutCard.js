@@ -51,6 +51,18 @@ class AboutCard {
     span.innerText =
       ". I specialize in React, Rails and PostgreSQL. Currently studying Java and GraphQL.";
     p2.appendChild(span);
+
+    const wakaChart = document.createElement("div");
+    wakaChart.id = "waka-chart";
+    this.containerDiv.appendChild(wakaChart);
+
+    let figure = document.createElement("figure");
+    const embed = document.createElement("embed");
+    embed.src =
+      "https://wakatime.com/share/@evan100/cba552fa-2d56-4117-87a8-008ebc12f6af.svg";
+
+    figure.appendChild(embed);
+    wakaChart.appendChild(figure);
   }
 }
 
