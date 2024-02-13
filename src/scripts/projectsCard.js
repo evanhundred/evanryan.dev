@@ -8,21 +8,24 @@ class ProjectsCard {
         gitHubUrl: "https://github.com/evanhundred/population-tracker",
         liveUrl: "https://evanhundred.github.io/population-tracker/",
         description:
-          "Population Tracker is a data visualization tool, which fetches U.S. Census records to render a colorful map. Population is displayed by year, and broken down by state or territory."
+          "Population Tracker is a data visualization tool, which fetches U.S. Census records to render a colorful map. Population is displayed by year, and broken down by state or territory.",
+        techStack: "vanilla JavaScript and D3.geo."
       },
       yup: {
         title: "Yup",
         gitHubUrl: "https://github.com/evanhundred/yup",
         liveUrl: "https://yup.evanryan.dev",
         description:
-          "Yup is a full stack Yelp clone, featuring User Auth and CRUD functionality."
+          "Yup is a full stack Yelp clone, featuring User Auth and CRUD functionality.",
+        techStack: "JavaScript, React and Redux, Ruby on Rails, and PostgreSQL."
       },
       nyght: {
         title: "NYGHT",
         gitHubUrl: "https://github.com/cathanderson/nyght",
         liveUrl: "https://nyght-40rn.onrender.com/",
         description:
-          "NYGHT is an evening/date planning app, which presents users with an itinerary for the night based on neighborhood and preference. Logged in users can save, edit, and share itineraries with others via email."
+          "NYGHT is an evening/date planning app, which presents users with an itinerary for the night based on neighborhood and preference. Logged in users can save, edit, and share itineraries with others via email.",
+        techStack: "JavaScript, React and Redux, Express.js, and MongoDB."
       }
     };
 
@@ -79,6 +82,11 @@ class ProjectsCard {
       const description = document.createElement("p");
       description.innerText = project.description;
       projectItem.appendChild(description);
+
+      const techStack = document.createElement("p");
+      techStack.innerText = `Built with ${project.techStack}`;
+      // techStack.innerText = "boop";
+      projectItem.appendChild(techStack);
 
       container.appendChild(projectItem);
     });
