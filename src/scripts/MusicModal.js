@@ -32,7 +32,7 @@ class MusicModal {
 
     let div = document.createElement("div");
     mainContent.append(div);
-    div.className = "image-container";
+    div.className = "image-container youtube";
     let a = document.createElement("a");
     div.append(a);
     a.href = "https://www.youtube.com/@evanryanbass";
@@ -48,7 +48,7 @@ class MusicModal {
 
     div = document.createElement("div");
     mainContent.append(div);
-    div.className = "image-container";
+    div.className = "image-container new-direction";
     a = document.createElement("a");
     div.append(a);
     a.href = "https://evanhundred.github.io/new-direction";

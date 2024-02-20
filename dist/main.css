@@ -116,7 +116,7 @@ div.social-links img {
   }
   & #music-modal-box {
     /* margin: auto; */
-    width: 30vw;
+    width: max-content;
     height: max-content;
     position: relative;
     background: #f9f9f9;
@@ -143,6 +143,15 @@ div.social-links img {
         gap: 8px;
         margin: 10px 0;
         & .image-container {
+          &.youtube {
+            width: 120px;
+          }
+          &.new-direction {
+            width: 300px;
+            & img {
+              width: 300px;
+            }
+          }
           & a {
             color: black;
             text-decoration: none;
@@ -150,7 +159,7 @@ div.social-links img {
               font-size: 14px;
             }
             & img {
-              width: 50px;
+              width: 100px;
             }
           }
         }
