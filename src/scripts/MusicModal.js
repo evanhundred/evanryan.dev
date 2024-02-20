@@ -31,11 +31,8 @@ class MusicModal {
     modalContent.append(mainContent);
     mainContent.className = "main-content";
 
-    const line1 = document.createElement("div");
-    mainContent.append(line1);
-    line1.className = "line-1";
     let div = document.createElement("div");
-    line1.append(div);
+    mainContent.append(div);
     div.className = "image-container";
     let a = document.createElement("a");
     div.append(a);
@@ -51,7 +48,7 @@ class MusicModal {
     img.alt = "YouTube";
 
     div = document.createElement("div");
-    line1.append(div);
+    mainContent.append(div);
     div.className = "image-container";
     a = document.createElement("a");
     div.append(a);
