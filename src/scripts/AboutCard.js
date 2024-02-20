@@ -1,3 +1,4 @@
+import MusicModal from "./MusicModal";
 class AboutCard {
   constructor(containerDiv) {
     this.containerDiv = containerDiv;
@@ -39,18 +40,29 @@ class AboutCard {
     let p2 = document.createElement("p");
     p2.innerText = "Based in Brooklyn, NYC. Developer and ";
     p2Container.appendChild(p2);
-    let a = document.createElement("a");
-    a.href = "https://www.youtube.com/@evanryanbass";
-    a.rel = "noopener noreferrer";
-    a.target = "_blank";
-    a.className = "musician-link";
-    let linkText = document.createTextNode("musician");
-    a.appendChild(linkText);
-    p2.appendChild(a);
+    // let a = document.createElement("a");
+    // a.href = "https://www.youtube.com/@evanryanbass";
+    // a.rel = "noopener noreferrer";
+    // a.target = "_blank";
+    // a.className = "musician-link";
+    const openMusicModal = (e) => {
+      console.log(e);
+      e.preventDefault();
+      const musicModalContainer = document.createElement("div");
+      musicModalContainer.id = "music-modal-container";
+      const mainPage = document.getElementById("main-page-container");
+      mainPage.append(musicModalContainer);
+      new MusicModal(musicModalContainer);
+    };
     let span = document.createElement("span");
+    p2.appendChild(span);
+    span.addEventListener("click", (e) => openMusicModal(e));
+    span.innerText = "musician";
+    span.className = "popup-link";
+    span = document.createElement("span");
+    p2.appendChild(span);
     span.innerText =
       ". I specialize in React, Rails and PostgreSQL. Currently studying Java and GraphQL.";
-    p2.appendChild(span);
 
     const wakaChart = document.createElement("div");
     wakaChart.id = "waka-chart";

@@ -1,7 +1,6 @@
 class MusicModal {
   constructor(ele) {
     this.parentEle = ele;
-    ele.id = "music-modal-container";
 
     const modalOverlay = document.createElement("div");
     modalOverlay.id = "modal-overlay";
@@ -12,7 +11,7 @@ class MusicModal {
     ele.append(modalBox);
 
     const modalContent = document.createElement("div");
-    modalcontent.className = "modal-content";
+    modalContent.className = "modal-content";
     modalBox.append(modalContent);
 
     const handleClose = () => {

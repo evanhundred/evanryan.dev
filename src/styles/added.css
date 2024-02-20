@@ -31,10 +31,13 @@ section#main-page-container {
   }
   #bio-container {
     & #bio-p2-container {
-      & p a {
+      & p {
         color: black;
-        &:hover {
-          color: rgb(41, 129, 107);
+        & span.popup-link {
+          cursor: pointer;
+          &:hover {
+            color: rgb(41, 129, 107);
+          }
         }
       }
     }

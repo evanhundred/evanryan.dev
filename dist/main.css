@@ -34,10 +34,13 @@ section#main-page-container {
   }
   #bio-container {
     & #bio-p2-container {
-      & p a {
+      & p {
         color: black;
-        &:hover {
-          color: rgb(41, 129, 107);
+        & span.popup-link {
+          cursor: pointer;
+          &:hover {
+            color: rgb(41, 129, 107);
+          }
         }
       }
     }
@@ -89,6 +92,69 @@ div.social-links img {
 
 .container-card {
   margin: 0px 0;
+}
+
+/*!**********************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/music-modal.css ***!
+  \**********************************************************************************************************/
+#modal-overlay,
+#music-modal-container {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+}
+
+#music-modal-container {
+  z-index: 1;
+  & #modal-overlay {
+    background: rgba(49, 49, 49, 0.8);
+  }
+  & #music-modal-box {
+    width: 30vw;
+    height: max-content;
+    position: relative;
+    background: #f9f9f9;
+    display: flex;
+    border-radius: 10px;
+
+    & .modal-content {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      padding: 2.5em 3em;
+
+      & .close-x {
+        display: flex;
+        justify-content: flex-end;
+        & p {
+          cursor: pointer;
+          font-size: 15px;
+        }
+      }
+
+      & .main-content {
+        display: flex;
+        gap: 8px;
+        margin: 10px 0;
+        & .image-container {
+          & a {
+            color: black;
+            text-decoration: none;
+            & p {
+              font-size: 14px;
+            }
+            & img {
+              width: 50px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 /*!*****************************************************************************************************!*\
