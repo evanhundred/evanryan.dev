@@ -104,6 +104,7 @@ div.social-links img {
   right: 0;
   bottom: 0;
   position: fixed;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -114,6 +115,7 @@ div.social-links img {
     background: rgba(49, 49, 49, 0.8);
   }
   & #music-modal-box {
+    /* margin: auto; */
     width: 30vw;
     height: max-content;
     position: relative;
