@@ -1,7 +1,7 @@
-import _ from "lodash";
-import ProjectsCard from "./scripts/ProjectsCard";
-import AboutCard from "./scripts/AboutCard";
-import Spacer from "./scripts/Spacer";
+// import _ from "lodash";
+import ProjectsCard from "./components/projects/projects.component";
+import AboutCard from "./components/about/about.component";
+import Spacer from "./components/spacer/spacer.component";
 
 document.addEventListener("DOMContentLoaded", () => {
   const topSpacingContainer = document.createElement("div");
@@ -10,12 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const topSpacingInstance = new Spacer(topSpacingContainer);
 
   const projectsContainer = document.querySelector("div.projects-container");
-  // const projectsTitle = document.querySelector("h2.projects-title");
   const projectsCard = new ProjectsCard(projectsContainer);
-  // projectsTitle.addEventListener("click", (e) =>
-  //   projectsCard.expandProjects(e)
-  // );
-  // let expanded = false;
 
   const aboutDiv = document.querySelector(".about-container");
   const aboutCard = new AboutCard(aboutDiv);
@@ -24,6 +19,10 @@ document.addEventListener("DOMContentLoaded", () => {
 // -----
 // next: create expandable projects cards
 // -----
+// projectsTitle.addEventListener("click", (e) =>
+//   projectsCard.expandProjects(e)
+// );
+// let expanded = false;
 
 // document.addEventListener("DOMContentLoaded", () => {
 //   const projectsContainer = document.querySelector("div.projects-container");

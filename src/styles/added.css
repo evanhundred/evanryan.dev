@@ -21,7 +21,7 @@ section#main-page-container {
   margin: 0;
 }
 
-#about-container {
+about {
   #photo-container {
     margin-top: 20px;
     img {
