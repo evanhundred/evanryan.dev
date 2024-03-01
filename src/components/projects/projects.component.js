@@ -1,5 +1,12 @@
-class ProjectsCard {
+import template from "./projects.template";
+
+class Projects extends HTMLElement {
   constructor(containerDiv) {
+    super();
+    const node = document.importNode(template.content, true);
+    this.shadow = this.attachShadow({ mode: "open" });
+    this.shadow.append(node);
+
     this.containerDiv = containerDiv;
 
     this.projects = {
@@ -109,5 +116,5 @@ class ProjectsCard {
     }
   }
 }
-
-export default ProjectsCard;
+customElements.define("projects", Projects);
+export default Projects;
