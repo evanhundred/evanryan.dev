@@ -49,7 +49,7 @@ class AboutCard {
     p2.appendChild(a);
     let span = document.createElement("span");
     span.innerText =
-      ". I specialize in React, Rails and PostgreSQL. Currently studying Java and GraphQL.";
+      ". I specialize in JavaScript, React, Rails and PostgreSQL. Currently studying Java and GraphQL.";
     p2.appendChild(span);
 
     const wakaChart = document.createElement("div");
