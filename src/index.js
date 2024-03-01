@@ -2,6 +2,7 @@ import _ from "lodash";
 import ProjectsCard from "./scripts/ProjectsCard";
 import AboutCard from "./scripts/AboutCard";
 import Spacer from "./scripts/Spacer";
+// comment
 
 document.addEventListener("DOMContentLoaded", () => {
   const topSpacingContainer = document.createElement("div");
