@@ -63,6 +63,17 @@ class AboutCard {
 
     figure.appendChild(embed);
     wakaChart.appendChild(figure);
+
+    // const ghBadge = () => {
+    //   const iframe = document.createElement("iframe");
+    //   iframe.width = "600";
+    //   iframe.height = "600";
+    //   iframe.src =
+    //     "https://ionicabizau.github.io/github-profile-languages/api.html?evanhundred";
+    //   iframe.frameborder = "0";
+    //   return iframe;
+    // };
+    // containerDiv.appendChild(ghBadge());
   }
 }
 
