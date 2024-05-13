@@ -1,7 +1,7 @@
 section#main-page-container {
   padding-bottom: 15px;
 
-  #content-container {
+  & #content-container {
     margin-bottom: 45px;
   }
 
@@ -37,13 +37,12 @@ section#main-page-container {
           color: rgb(41, 129, 107);
         }
       }
-    }
-  }
-  #waka-chart {
-    margin: 20px 0 -10px;
-
-    & g#activate-serie-13 {
-      color: red;
+      & a.docs-link {
+        cursor: pointer;
+        & span.lang-name {
+          font-weight: 600;
+        }
+      }
     }
   }
 

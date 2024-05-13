@@ -46,9 +46,94 @@ class AboutCard {
     let linkText = document.createTextNode('musician');
     a.appendChild(linkText);
     p2.appendChild(a);
-    let span = document.createElement('span');
-    span.innerText = '. I specialize in JavaScript, React, Rails and PostgreSQL. Currently studying Java and GraphQL.';
-    p2.appendChild(span);
+    // let span = document.createElement('span');
+
+    // span.innerText = '. JavaScript, React, Rails and PostgreSQL are the backbone of my current work. Django and GraphQL studies are in progress.';
+
+    let langsCurrent3 = ['Javascript', 'React', 'Rails', 'PostgreSQL'];
+    let langsInProgress2 = ['Django', 'GraphQL'];
+
+    const myLangs = {
+      current: {
+        Javascript: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
+        React: 'https://ruby-doc.org/',
+        Rails: 'https://guides.rubyonrails.org',
+        PostgreSQL: 'https://www.postgresql.org/docs/'
+      },
+      dev: {
+        Django: 'https://docs.djangoproject.com/en/5.0/',
+        GraphQL: 'https://www.apollographql.com/docs/'
+      }
+    };
+
+    let textSpan = document.createElement('span');
+    textSpan.innerText = '. ';
+    p2.appendChild(textSpan);
+
+    const makeTextSpan = (text = '', parent = null, langType = null) => {
+      textSpan = document.createElement('span');
+      textSpan.innerText = text;
+      if (langType) {
+        let langName = text;
+        let aNode = document.createElement('a');
+        aNode.className = 'docs-link';
+        aNode.href = myLangs[langType][langName];
+        aNode.rel = 'noopener noreferrer';
+        aNode.target = '_blank';
+        aNode.appendChild(textSpan);
+        textSpan.className = 'lang-name';
+        parent.appendChild(aNode);
+      } else {
+        parent.appendChild(textSpan);
+      }
+    };
+
+    for (let i = 0; i < langsCurrent3.length; i++) {
+      // languagesP = languagesP.concat(langsCurrent3[i]);
+      makeTextSpan(langsCurrent3[i], p2, 'current');
+      // languageSpan = document.createElement('span');
+      // languageSpan.innerText = langsCurrent3[i];
+      // p2.appendChild(languageSpan);
+
+      let spanText = '';
+      if (i < langsCurrent3.length - 1) spanText = spanText.concat(',');
+      spanText = spanText.concat(' ');
+      if (i === langsCurrent3.length - 2) spanText = spanText.concat('and ');
+      makeTextSpan(spanText, p2);
+      // p2.appendChild(textSpan);
+    }
+
+    makeTextSpan('are the backbone of my current work. ', p2);
+
+    for (let i = 0; i < langsInProgress2.length; i++) {
+      makeTextSpan(langsInProgress2[i], p2, 'dev');
+
+      let spanText = ' ';
+
+      if (i === 0) {
+        spanText = spanText.concat('and ');
+      }
+      makeTextSpan(spanText, p2);
+    }
+    // languagesP = languagesP.concat('development are in progress.');
+    makeTextSpan('development are in progress.', p2);
+
+    // let languagesP = '. ';
+    // for (let i = 0; i < langsCurrent3.length; i++) {
+    //   languagesP += langsCurrent3[i];
+    //   if (i < langsCurrent3.length - 1) languagesP += ',';
+    //   languagesP += ' ';
+    // }
+    // languagesP += 'are the backbone of my current work. ';
+    // for (let i = 0; i < langsInProgress2.length; i++) {
+    //   languagesP += langsInProgress2[i] + ' ';
+    //   if ((i = 0)) languagesP += 'and ';
+    // }
+    // languagesP += 'development are in progress.';
+
+    // span.innerText = languagesP;
+
+    // p2.appendChild(span);
 
     const wakaChart = document.createElement('div');
     wakaChart.id = 'waka-chart';
