@@ -53,6 +53,19 @@ class AboutCard {
     let langsCurrent3 = ['Javascript', 'React', 'Rails', 'PostgreSQL'];
     let langsInProgress2 = ['Django', 'GraphQL'];
 
+    const myLangs = {
+      current: {
+        Javascript: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
+        React: 'https://ruby-doc.org/',
+        Rails: 'https://guides.rubyonrails.org',
+        PostgreSQL: 'https://www.postgresql.org/docs/'
+      },
+      dev: {
+        Django: 'https://docs.djangoproject.com/en/5.0/',
+        GraphQL: 'https://www.apollographql.com/docs/'
+      }
+    };
+
     let textSpan = document.createElement('span');
     textSpan.innerText = '. ';
     p2.appendChild(textSpan);
@@ -64,7 +77,6 @@ class AboutCard {
       if (parent) parent.appendChild(textSpan);
     };
 
-    let languageSpan;
     for (let i = 0; i < langsCurrent3.length; i++) {
       // languagesP = languagesP.concat(langsCurrent3[i]);
       makeTextSpan(langsCurrent3[i], p2, true);
