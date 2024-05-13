@@ -30,8 +30,7 @@ class AboutCard {
     this.containerDiv.appendChild(bio);
 
     let p = document.createElement('p');
-    p.innerText =
-      'Full Stack software engineer, open to employment and collaboration.';
+    p.innerText = 'Full Stack software engineer, open to employment and collaboration.';
     bio.appendChild(p);
     let p2Container = document.createElement('div');
     p2Container.id = 'bio-p2-container';
@@ -48,8 +47,7 @@ class AboutCard {
     a.appendChild(linkText);
     p2.appendChild(a);
     let span = document.createElement('span');
-    span.innerText =
-      '. I specialize in JavaScript, React, Rails and PostgreSQL. Currently studying Java and GraphQL.';
+    span.innerText = '. I specialize in JavaScript, React, Rails and PostgreSQL. Currently studying Java and GraphQL.';
     p2.appendChild(span);
 
     const wakaChart = document.createElement('div');
@@ -58,10 +56,7 @@ class AboutCard {
 
     let figure = document.createElement('figure');
     const embed = document.createElement('embed');
-    embed.src =
-      'https://wakatime.com/share/@evan100/9db7ba49-755e-4850-9106-fb17dfc9c2ac.svg';
-    // 7-day:
-    // "https://wakatime.com/share/@evan100/cba552fa-2d56-4117-87a8-008ebc12f6af.svg";
+    embed.src = 'https://wakatime.com/share/@evan100/0ca8456d-fb4d-4630-a258-558c233f632e.svg';
 
     figure.appendChild(embed);
     wakaChart.appendChild(figure);
@@ -69,3 +64,8 @@ class AboutCard {
 }
 
 export default AboutCard;
+
+// 7 day:
+// 'https://wakatime.com/share/@evan100/9db7ba49-755e-4850-9106-fb17dfc9c2ac.svg';
+// prev 7 day:
+// "https://wakatime.com/share/@evan100/cba552fa-2d56-4117-87a8-008ebc12f6af.svg";

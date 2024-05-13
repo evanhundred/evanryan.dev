@@ -41,6 +41,10 @@ section#main-page-container {
   }
   #waka-chart {
     margin: 20px 0 -10px;
+
+    & g#activate-serie-13 {
+      color: red;
+    }
   }
 
   #resume-container {
