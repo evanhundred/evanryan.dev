@@ -70,22 +70,27 @@ class AboutCard {
     textSpan.innerText = '. ';
     p2.appendChild(textSpan);
 
-    const makeTextSpan = (text = '', parent = null, langType = '') => {
+    const makeTextSpan = (text = '', parent = null, langType = null) => {
       textSpan = document.createElement('span');
       textSpan.innerText = text;
       if (langType) {
         let langName = text;
         let aNode = document.createElement('a');
-        a.src = myLangs[langType][langName];
+        aNode.className = 'docs-link';
+        aNode.href = myLangs[langType][langName];
+        aNode.rel = 'noopener noreferrer';
+        aNode.target = '_blank';
         aNode.appendChild(textSpan);
         textSpan.className = 'lang-name';
+        parent.appendChild(aNode);
+      } else {
+        parent.appendChild(textSpan);
       }
-      if (parent) parent.appendChild(textSpan);
     };
 
     for (let i = 0; i < langsCurrent3.length; i++) {
       // languagesP = languagesP.concat(langsCurrent3[i]);
-      makeTextSpan(langsCurrent3[i], p2, true, 'current');
+      makeTextSpan(langsCurrent3[i], p2, 'current');
       // languageSpan = document.createElement('span');
       // languageSpan.innerText = langsCurrent3[i];
       // p2.appendChild(languageSpan);
@@ -101,7 +106,7 @@ class AboutCard {
     makeTextSpan('are the backbone of my current work. ', p2);
 
     for (let i = 0; i < langsInProgress2.length; i++) {
-      makeTextSpan(langsInProgress2[i], p2, true);
+      makeTextSpan(langsInProgress2[i], p2, 'dev');
 
       let spanText = ' ';
 

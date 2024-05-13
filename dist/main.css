@@ -40,8 +40,11 @@ section#main-page-container {
           color: rgb(41, 129, 107);
         }
       }
-      & span.lang-name {
-        font-weight: 600;
+      & a.docs-link {
+        cursor: pointer;
+        & span.lang-name {
+          font-weight: 600;
+        }
       }
     }
   }
