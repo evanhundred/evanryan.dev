@@ -70,16 +70,22 @@ class AboutCard {
     textSpan.innerText = '. ';
     p2.appendChild(textSpan);
 
-    const makeTextSpan = (text = '', parent = null, langName = false) => {
+    const makeTextSpan = (text = '', parent = null, langType = '') => {
       textSpan = document.createElement('span');
       textSpan.innerText = text;
-      if (langName) textSpan.className = 'lang-name';
+      if (langType) {
+        let langName = text;
+        let aNode = document.createElement('a');
+        a.src = myLangs[langType][langName];
+        aNode.appendChild(textSpan);
+        textSpan.className = 'lang-name';
+      }
       if (parent) parent.appendChild(textSpan);
     };
 
     for (let i = 0; i < langsCurrent3.length; i++) {
       // languagesP = languagesP.concat(langsCurrent3[i]);
-      makeTextSpan(langsCurrent3[i], p2, true);
+      makeTextSpan(langsCurrent3[i], p2, true, 'current');
       // languageSpan = document.createElement('span');
       // languageSpan.innerText = langsCurrent3[i];
       // p2.appendChild(languageSpan);
