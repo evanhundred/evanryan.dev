@@ -47,7 +47,11 @@ class AboutCard {
     a.appendChild(linkText);
     p2.appendChild(a);
     let span = document.createElement('span');
-    span.innerText = '. I specialize in JavaScript, React, Rails and PostgreSQL. Currently studying Java and GraphQL.';
+    span.innerText = '. JavaScript, React, Rails and PostgreSQL are the backbone of my current work. Django and GraphQL studies are in progress.';
+    let langsCurrent = ['Javascript', 'React', 'Rails', 'PostgreSQL'];
+    let langsInProgress = ['Django', 'GraphQL'];
+
+    // span.innerText = '. I specialize in JavaScript, React, Rails and PostgreSQL. Currently studying Java and GraphQL.';
     p2.appendChild(span);
 
     const wakaChart = document.createElement('div');
