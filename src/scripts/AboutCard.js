@@ -46,26 +46,54 @@ class AboutCard {
     let linkText = document.createTextNode('musician');
     a.appendChild(linkText);
     p2.appendChild(a);
-    let span = document.createElement('span');
+    // let span = document.createElement('span');
 
     // span.innerText = '. JavaScript, React, Rails and PostgreSQL are the backbone of my current work. Django and GraphQL studies are in progress.';
 
     let langsCurrent3 = ['Javascript', 'React', 'Rails', 'PostgreSQL'];
     let langsInProgress2 = ['Django', 'GraphQL'];
 
-    let languagesP = '. ';
+    let textSpan = document.createElement('span');
+    textSpan.innerText = '. ';
+    p2.appendChild(textSpan);
+
+    const makeTextSpan = (text = '', parent = null, langName = false) => {
+      textSpan = document.createElement('span');
+      textSpan.innerText = text;
+      if (langName) textSpan.className = 'lang-name';
+      if (parent) parent.appendChild(textSpan);
+    };
+
+    let languageSpan;
     for (let i = 0; i < langsCurrent3.length; i++) {
-      languagesP = languagesP.concat(langsCurrent3[i]);
-      if (i < langsCurrent3.length - 1) languagesP = languagesP.concat(',');
-      languagesP = languagesP.concat(' ');
-      if (i === langsCurrent3.length - 2) languagesP = languagesP.concat('and ');
+      // languagesP = languagesP.concat(langsCurrent3[i]);
+      makeTextSpan(langsCurrent3[i], p2, true);
+      // languageSpan = document.createElement('span');
+      // languageSpan.innerText = langsCurrent3[i];
+      // p2.appendChild(languageSpan);
+
+      let spanText = '';
+      if (i < langsCurrent3.length - 1) spanText = spanText.concat(',');
+      spanText = spanText.concat(' ');
+      if (i === langsCurrent3.length - 2) spanText = spanText.concat('and ');
+      makeTextSpan(spanText, p2);
+      // p2.appendChild(textSpan);
     }
-    languagesP = languagesP.concat('are the backbone of my current work. ');
+
+    makeTextSpan('are the backbone of my current work. ', p2);
+
     for (let i = 0; i < langsInProgress2.length; i++) {
-      languagesP = languagesP.concat(langsInProgress2[i] + ' ');
-      if (i === 0) languagesP = languagesP.concat('and ');
+      makeTextSpan(langsInProgress2[i], p2, true);
+
+      let spanText = ' ';
+
+      if (i === 0) {
+        spanText = spanText.concat('and ');
+      }
+      makeTextSpan(spanText, p2);
     }
-    languagesP = languagesP.concat('development are in progress.');
+    // languagesP = languagesP.concat('development are in progress.');
+    makeTextSpan('development are in progress.', p2);
 
     // let languagesP = '. ';
     // for (let i = 0; i < langsCurrent3.length; i++) {
@@ -79,9 +107,10 @@ class AboutCard {
     //   if ((i = 0)) languagesP += 'and ';
     // }
     // languagesP += 'development are in progress.';
-    span.innerText = languagesP;
 
-    p2.appendChild(span);
+    // span.innerText = languagesP;
+
+    // p2.appendChild(span);
 
     const wakaChart = document.createElement('div');
     wakaChart.id = 'waka-chart';
