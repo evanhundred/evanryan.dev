@@ -47,11 +47,40 @@ class AboutCard {
     a.appendChild(linkText);
     p2.appendChild(a);
     let span = document.createElement('span');
-    span.innerText = '. JavaScript, React, Rails and PostgreSQL are the backbone of my current work. Django and GraphQL studies are in progress.';
-    let langsCurrent = ['Javascript', 'React', 'Rails', 'PostgreSQL'];
-    let langsInProgress = ['Django', 'GraphQL'];
 
-    // span.innerText = '. I specialize in JavaScript, React, Rails and PostgreSQL. Currently studying Java and GraphQL.';
+    // span.innerText = '. JavaScript, React, Rails and PostgreSQL are the backbone of my current work. Django and GraphQL studies are in progress.';
+
+    let langsCurrent3 = ['Javascript', 'React', 'Rails', 'PostgreSQL'];
+    let langsInProgress2 = ['Django', 'GraphQL'];
+
+    let languagesP = '. ';
+    for (let i = 0; i < langsCurrent3.length; i++) {
+      languagesP = languagesP.concat(langsCurrent3[i]);
+      if (i < langsCurrent3.length - 1) languagesP = languagesP.concat(',');
+      languagesP = languagesP.concat(' ');
+      if (i === langsCurrent3.length - 2) languagesP = languagesP.concat('and ');
+    }
+    languagesP = languagesP.concat('are the backbone of my current work. ');
+    for (let i = 0; i < langsInProgress2.length; i++) {
+      languagesP = languagesP.concat(langsInProgress2[i] + ' ');
+      if (i === 0) languagesP = languagesP.concat('and ');
+    }
+    languagesP = languagesP.concat('development are in progress.');
+
+    // let languagesP = '. ';
+    // for (let i = 0; i < langsCurrent3.length; i++) {
+    //   languagesP += langsCurrent3[i];
+    //   if (i < langsCurrent3.length - 1) languagesP += ',';
+    //   languagesP += ' ';
+    // }
+    // languagesP += 'are the backbone of my current work. ';
+    // for (let i = 0; i < langsInProgress2.length; i++) {
+    //   languagesP += langsInProgress2[i] + ' ';
+    //   if ((i = 0)) languagesP += 'and ';
+    // }
+    // languagesP += 'development are in progress.';
+    span.innerText = languagesP;
+
     p2.appendChild(span);
 
     const wakaChart = document.createElement('div');
