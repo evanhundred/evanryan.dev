@@ -116,7 +116,7 @@ class AboutCard {
       makeTextSpan(spanText, p2);
     }
     // languagesP = languagesP.concat('development are in progress.');
-    makeTextSpan('development are in progress.', p2);
+    makeTextSpan('development is in progress.', p2);
 
     // let languagesP = '. ';
     // for (let i = 0; i < langsCurrent3.length; i++) {
