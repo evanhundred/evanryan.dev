@@ -48,7 +48,8 @@ section#main-page-container {
           color: #087891;
           /* color: #089069; */
           &:hover {
-            color: #86c4c7;
+            color: #005569;
+            /* color: #86c4c7; */
             /* color: #86c7b4; */
           }
         }
