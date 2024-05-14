@@ -34,13 +34,20 @@ section#main-page-container {
       & p a {
         color: black;
         &:hover {
-          color: rgb(41, 129, 107);
+          color: #089069;
+          /* color: rgb(41, 129, 107); */
         }
       }
       & a.docs-link {
         cursor: pointer;
         & span.lang-name {
-          font-weight: 600;
+          /* font-weight: 600; */
+          color: #087891;
+          /* color: #089069; */
+          &:hover {
+            color: #86c4c7;
+            /* color: #86c7b4; */
+          }
         }
       }
     }
