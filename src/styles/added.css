@@ -29,34 +29,29 @@ section#main-page-container {
       width: 300px;
     }
   }
-  #bio-container {
+  & #bio-container {
     & #bio-p2-container {
       & p a {
         color: black;
         &:hover {
-          color: #089069;
-          /* color: rgb(41, 129, 107); */
+          color: #087891;
         }
       }
       & a.docs-link {
         cursor: pointer;
         & span.lang-name {
-          /* font-weight: 600; */
           color: #087891;
-          /* color: #089069; */
           &:hover {
             color: #005569;
-            /* color: #86c4c7; */
-            /* color: #86c7b4; */
           }
         }
       }
     }
   }
 
-  #resume-container {
+  & #resume-container {
     margin: 20px 0 20px;
-    h3 {
+    & h3 {
       color: #0d6efd;
       width: max-content;
       cursor: pointer;
