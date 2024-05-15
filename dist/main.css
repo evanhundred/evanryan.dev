@@ -94,12 +94,14 @@ div.social-links img {
 }
 
 .project-links {
-  padding: 3px 0 6px;
+  padding-top: 3px;
+  margin-bottom: 15px;
   display: flex;
 }
 
 .project-links p {
   padding: 0 10px;
+  margin: 0;
 }
 
 .container-card {
