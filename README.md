@@ -6,10 +6,10 @@ Welcome to [evanryan.dev](https://evanryan.dev).
 
 A simple portfolio featuring vanilla [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) and [webpack](https://webpack.js.org/concepts).
 
-- Template:
-- Start Bootstrap - The Big Picture v5.0.5 (https://startbootstrap.com/template/the-big-picture)
+Build on template Start Bootstrap - The Big Picture v5.0.5 (https://startbootstrap.com/template/the-big-picture)
+
 - Copyright 2013-2022 Start Bootstrap
-- Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-the-big-picture/blob/master/LICENSE)
+- [Licensed](assets/MIT_LICENSE) under MIT (https://github.com/StartBootstrap/startbootstrap-the-big-picture/blob/master/LICENSE)
 
 ![preview](./assets/erd-preview.png)
 
