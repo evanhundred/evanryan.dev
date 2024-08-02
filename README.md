@@ -11,6 +11,10 @@ Build on template Start Bootstrap - The Big Picture v5.0.5 (https://startbootstr
 - Copyright 2013-2022 Start Bootstrap
 - [Licensed](assets/MIT_LICENSE) under MIT (https://github.com/StartBootstrap/startbootstrap-the-big-picture/blob/master/LICENSE)
 
+<!-- &nbsp; -->
+
+---
+
 ![preview](./assets/erd-preview.png)
 
 <!--- waka repo badge:
