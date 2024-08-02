@@ -8,8 +8,8 @@ A simple portfolio featuring vanilla [JavaScript](https://developer.mozilla.org/
 
 Build on template Start Bootstrap - The Big Picture v5.0.5 (https://startbootstrap.com/template/the-big-picture)
 
-> Copyright 2013-2022 Start Bootstrap
-> [Licensed](assets/MIT_LICENSE) under MIT (https://github.com/StartBootstrap/startbootstrap-the-big-picture/blob/master/LICENSE)
+> - Copyright 2013-2022 Start Bootstrap
+> - [Licensed](assets/MIT_LICENSE) under MIT (https://github.com/StartBootstrap/startbootstrap-the-big-picture/blob/master/LICENSE)
 
 &nbsp;
 
