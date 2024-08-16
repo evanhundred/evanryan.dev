@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // let expanded = false;
 
   const aboutDiv = document.querySelector('.about-container');
-  const aboutCard = new AboutCard(aboutDiv);
+  new AboutCard(aboutDiv);
 });
 
 // -----

@@ -1,0 +1,13 @@
+diff --git a/src/index.js b/src/index.js
+index bfe9b68..394d2fe 100644
+--- a/src/index.js
++++ b/src/index.js
+@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
+   // let expanded = false;
+ 
+   const aboutDiv = document.querySelector('.about-container');
+-  const aboutCard = new AboutCard(aboutDiv);
++  new AboutCard(aboutDiv);
+ });
+ 
+ // -----
