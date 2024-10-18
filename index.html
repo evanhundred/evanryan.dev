@@ -9,9 +9,15 @@
     <title>evan ryan - developer</title>
     <script>
       let stringFromUrl = window.location.toString();
-      if (stringFromUrl === 'https://evanryan.dev?watch=fill') {
+      if (stringFromUrl.endsWith('watch=fill')) {
+        // 10-18-24 12:39 PM
+        // Fill Us Once Again full drum track (corrected)
         window.location.replace('https://youtu.be/SLG13FuZDZs?si=HDidYl9MD5nGLxH6');
       }
+      // console.log(stringFromUrl);
+      // if (stringFromUrl === 'https://evanryan.dev?watch=fill') {
+      //   window.location.replace('https://youtu.be/SLG13FuZDZs?si=HDidYl9MD5nGLxH6');
+      // }
     </script>
     <link rel="icon" type="image/x-icon" href="assets/letter-e.png" />
     <link href="./dist/main.css" rel="stylesheet" />
