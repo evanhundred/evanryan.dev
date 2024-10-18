@@ -2,14 +2,17 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta http-equiv="X-UA-Compatible" content="ie-edge" />
     <meta name="description" content="Developer Portfolio" />
     <meta name="author" content="Evan Ryan" />
     <title>evan ryan - developer</title>
+    <script>
+      let stringFromUrl = window.location.toString();
+      if (stringFromUrl === 'https://evanryan.dev?watch=fill') {
+        window.location.replace('https://youtu.be/SLG13FuZDZs?si=HDidYl9MD5nGLxH6');
+      }
+    </script>
     <link rel="icon" type="image/x-icon" href="assets/letter-e.png" />
     <link href="./dist/main.css" rel="stylesheet" />
     <script src="./dist/main.js" defer></script>
@@ -18,15 +21,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-bottom">
       <div class="container px-4 px-lg-5">
         <a class="navbar-brand" href="#main-page-container">evan</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarResponsive"
-          aria-controls="navbarResponsive"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -53,10 +48,7 @@
         <div class="row gx-4 gx-lg-5">
           <div class="col-lg-6 container-card">
             <h1 class="mt-5">evan ryan</h1>
-            <p>
-              Software Engineer - JavaScript, Ruby/Rails, React/Redux,
-              Express.js, PostgreSQL
-            </p>
+            <p>Software Engineer - JavaScript, Ruby/Rails, React/Redux, Express.js, PostgreSQL</p>
           </div>
           <div id="contact" class="col-lg-6 container-card">
             <h2 class="mt-5">contact</h2>
@@ -65,34 +57,18 @@
               <p>e: evan at evanryan dot dev</p>
               <div class="social-links">
                 <div class="github">
-                  <a
-                    href="http://www.github.com/evanhundred"
-                    target="_blank"
-                    rel="noreferrer"
-                    ><img src="./assets/github.png" alt="GitHub"
-                  /></a>
+                  <a href="http://www.github.com/evanhundred" target="_blank" rel="noreferrer"><img src="./assets/github.png" alt="GitHub" /></a>
                 </div>
                 <div class="linkedin">
-                  <a
-                    href="http://www.linkedin.com/in/evan-ryan-dev"
-                    target="_blank"
-                    rel="noreferrer"
-                    ><img src="./assets/linkedin.png" alt="LinkedIn"
-                  /></a>
+                  <a href="http://www.linkedin.com/in/evan-ryan-dev" target="_blank" rel="noreferrer"><img src="./assets/linkedin.png" alt="LinkedIn" /></a>
                 </div>
               </div>
             </div>
           </div>
-          <div
-            id="about-container"
-            class="col-lg-6 about-container container-card"
-          >
+          <div id="about-container" class="col-lg-6 about-container container-card">
             <h2 class="mt-5">about</h2>
           </div>
-          <div
-            id="projects-container"
-            class="col-lg-6 projects-container container-card"
-          >
+          <div id="projects-container" class="col-lg-6 projects-container container-card">
             <h2 class="mt-5 projects-title">projects</h2>
             <!-- <div class="project-items-list"></div> -->
           </div>
