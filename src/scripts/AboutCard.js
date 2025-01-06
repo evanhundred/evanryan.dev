@@ -16,7 +16,7 @@ class AboutCard {
     this.containerDiv.appendChild(resume);
 
     const openResumeFile = () => {
-      window.open('/assets/evan-resume.pdf', 'resumeTab');
+      window.open('/assets/evan-dev-resume.pdf', 'resumeTab');
     };
 
     let h3 = document.createElement('h3');
