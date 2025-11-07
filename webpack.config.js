@@ -2,14 +2,22 @@ const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 const config = {
-  entry: [
-    path.resolve(__dirname, "src", "index.js"),
-    path.resolve(__dirname, "src", "index.scss")
-  ],
-  output: {
-    path: path.join(__dirname, "dist"), // bundled file in dist/
-    filename: "[name].js"
+  entry: {
+    index: './src/index.js',
+    print: './src/print.js'
   },
+  output: {
+    filename: "[name].js"
+    path: path.resolve(__dirname, "dist"), // bundled file in dist/
+  },
+  // entry: [
+  //   path.resolve(__dirname, "src", "index.js"),
+  //   path.resolve(__dirname, "src", "index.scss")
+  // ],
+  // output: {
+  //   path: path.join(__dirname, "dist"), // bundled file in dist/
+  //   filename: "[name].js"
+  // },
   module: {
     rules: [
       {
