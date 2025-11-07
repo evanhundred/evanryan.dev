@@ -2,12 +2,14 @@
 
 This project is the personal portfolio website for Evan Ryan, showcasing his work and resume.
 
+# This is a work in progress.
+
 ## Getting Started
 
 ### Prerequisites
 
-*   Node.js
-*   npm
+- Node.js
+- npm
 
 ### Installation
 
@@ -40,14 +42,14 @@ The project has two potential configurations:
 
 ### Key Files and Directories
 
-*   `app.js`: The main Express.js server file.
-*   `public/`: Contains all the static assets for the website, such as images, CSS, and the resume.
-*   `src/`: Contains the source code for the webpack build.
-*   `webpack.config.js`: The configuration file for webpack.
-*   `package.json`: Lists the project dependencies and scripts.
+- `app.js`: The main Express.js server file.
+- `public/`: Contains all the static assets for the website, such as images, CSS, and the resume.
+- `src/`: Contains the source code for the webpack build.
+- `webpack.config.js`: The configuration file for webpack.
+- `package.json`: Lists the project dependencies and scripts.
 
 ## Technologies Used
 
-*   **Backend**: Node.js, Express.js
-*   **Frontend**: HTML, CSS, JavaScript
-*   **Build Tool**: webpack (potentially unused)
+- **Backend**: Node.js, Express.js
+- **Frontend**: HTML, CSS, JavaScript
+- **Build Tool**: webpack (potentially unused)
