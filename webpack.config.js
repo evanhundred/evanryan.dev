@@ -1,52 +1,56 @@
+// Generated using webpack-cli https://github.com/webpack/webpack-cli
+
 const path = require('path');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const WorkboxWebpackPlugin = require('workbox-webpack-plugin');
+
+const isProduction = process.env.NODE_ENV === 'production';
+
 
 const config = {
-  entry: {
-    index: './src/index.js',
-    print: './src/print.js'
-  },
-  output: {
-    filename: '[name].js',
-    path: path.resolve(__dirname, 'dist') // bundled file in dist/
-  },
-  // entry: [
-  //   path.resolve(__dirname, "src", "index.js"),
-  //   path.resolve(__dirname, "src", "index.scss")
-  // ],
-  // output: {
-  //   path: path.join(__dirname, "dist"), // bundled file in dist/
-  //   filename: "[name].js"
-  // },
-  module: {
-    rules: [
-      {
-        test: /\.js$/, // applies to js files
-        use: ['babel-loader'],
-        exclude: /node_modules/ // don't transpile node_modules
-      },
-      {
-        test: /\.s?[ac]ss$/, // applies to css/scss/sass files
-        use: [
-          MiniCssExtractPlugin.loader, // create bundled css file
-          {
-            loader: 'css-loader', // resolves @import statements
-            options: { url: false } // don't resolve url() statements
-          },
-          'sass-loader' // compiles sass to css
-        ]
-      }
-    ]
-  },
-  plugins: [new MiniCssExtractPlugin()]
+    entry: './src/index.js',
+    output: {
+        path: path.resolve(__dirname, 'dist'),
+    },
+    devServer: {
+        open: true,
+        host: 'localhost',
+    },
+    plugins: [
+        new HtmlWebpackPlugin({
+            template: 'index.html',
+        }),
+
+        // Add your plugins here
+        // Learn more about plugins from https://webpack.js.org/configuration/plugins/
+    ],
+    module: {
+        rules: [
+            {
+                test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif)$/i,
+                type: 'asset',
+            },
+            
+            {
+                test: /\.html$/i,
+                use: ['html-loader'],
+            },
+
+            // Add your rules for custom modules here
+            // Learn more about loaders from https://webpack.js.org/loaders/
+        ],
+    },
 };
 
-module.exports = (env, argv) => {
-  if (argv.mode === 'production') {
-    config.devtool = 'source-map';
-  } else {
-    config.devtool = 'eval-source-map';
-  }
-
-  return config;
+module.exports = () => {
+    if (isProduction) {
+        config.mode = 'production';
+        
+        
+        config.plugins.push(new WorkboxWebpackPlugin.GenerateSW());
+        
+    } else {
+        config.mode = 'development';
+    }
+    return config;
 };
